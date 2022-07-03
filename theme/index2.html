@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prexy</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+    <!-- Custom Stylesheet -->
+    
+    
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="@@dashboard">
+
+<div id="preloader">
+    <div class="sk-three-bounce">
+        <div class="sk-child sk-bounce1"></div>
+        <div class="sk-child sk-bounce2"></div>
+        <div class="sk-child sk-bounce3"></div>
+    </div>
+</div>
+
+<div id="main-wrapper">
+
+
+    <div class="header landing bg-dark light">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="navigation">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="brand-logo">
+                            <a href="index.html">
+                                <img src="./images/logo.png" alt="" class="logo-primary">
+                                <img src="./images/logow.png" alt="" class="logo-white">
+                            </a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav ms-auto">
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Home
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="./index.html">Home 1</a>
+                                        <a class="dropdown-item" href="./index2.html">Home 2</a>
+                                        <!-- <a class="dropdown-item" href="./index3.html">Home 3</a>
+                                        <a class="dropdown-item" href="./index4.html">Home 4</a>
+                                        <a class="dropdown-item" href="./index5.html">Home 5</a>
+                                        <a class="dropdown-item" href="./index6.html">Home 6</a>
+                                        <a class="dropdown-item" href="./index7.html">Home 7</a>
+                                        <a class="dropdown-item" href="./index8.html">Home 8</a> -->
+                                    </div>
+                                </li>
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">Home</a>
+                                </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./price.html">Price</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./app.html">App</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Company
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="./about.html">About us</a>
+                                        <a class="dropdown-item" href="./team.html">Team</a>
+                                        <a class="dropdown-item" href="./blog.html">Blog</a>
+                                        <a class="dropdown-item" href="./career.html">Career</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Support
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="./contact.html">Contact us</a>
+                                        <a class="dropdown-item" href="./helpdesk.html">Help Desk</a>
+                                        <a class="dropdown-item" href="./privacy-policy.html">Privacy</a>
+                                        <a class="dropdown-item" href="./faq.html">FAQ</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./dashboard.html">Dashboard</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="signin-btn">
+                            <a class="btn btn-primary" href="./signin.html">Sign in</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="intro2 section-padding bg-dark" id="intro">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-xl-6 col-lg-6">
+                <div class="intro-content">
+                    <h1 class="text-white">Buy and sell cryptocurrency</h1>
+                    <p>Fast and secure way to purchase or exchange 150+ cryptocurrencies</p>
+                    <div class="intro-form">
+                        <form action="#">
+                            <input type="text" class="form-control" placeholder="Subscribe Now">
+                            <button type="submit">
+                                <i class="la la-arrow-right first"></i>
+                                <i class="la la-arrow-right second"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-12">
+                <div class="intro-form-exchange">
+                    <form method="post" name="myform" class="currency_validate trade-form row g-3">
+                        <div class="col-12">
+                            <label class="form-label">Send</label>
+                            <div class="input-group">
+                                <select class="form-control" name="method">
+                                    <option value="bank">USD</option>
+                                    <option value="master">Euro</option>
+                                </select>
+                                <input type="text" name="currency_amount" class="form-control" placeholder="0.0214 BTC">
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">Receive</label>
+                            <div class="input-group">
+                                <select class="form-control" name="method">
+                                    <option value="bank">BTC</option>
+                                    <option value="master">ETH</option>
+                                </select>
+                                <input type="text" name="currency_amount" class="form-control" placeholder="0.0214 BTC">
+                            </div>
+                        </div>
+
+                        <p class="mb-0">1 USD ~ 0.000088 BTC <a href="#">Expected rate <br>No extra
+                                fees</a></p>
+                        <button type="button" class="btn btn-primary ">
+                            Buy Now
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="price-grid section-padding bg-dark pt-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                <div class="price-widget bg-btc">
+                    <a href="price-details.html">
+                        <div class="price-content">
+                            <div class="icon-title">
+                                <i class="cc BTC"></i>
+                                <span>Bitcoin</span>
+                            </div>
+                            <h5>$ 11,785.10</h5>
+                        </div>
+                        <div id="chart1"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                <div class="price-widget bg-eth">
+                    <a href="price-details.html">
+                        <div class="price-content">
+                            <div class="icon-title">
+                                <i class="cc ETH"></i>
+                                <span>Ethereum</span>
+                            </div>
+                            <h5>$ 11,785.10</h5>
+                        </div>
+                        <div id="chart2"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                <div class="price-widget bg-usdt">
+                    <a href="price-details.html">
+                        <div class="price-content">
+                            <div class="icon-title">
+                                <i class="cc USDT"></i>
+                                <span>Tether</span>
+                            </div>
+                            <h5>$ 11,785.10</h5>
+                        </div>
+                        <div id="chart3"></div>
+                    </a>
+                </div>
+            </div>
+            <!-- <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                <div class="price-widget bg-dark">
+                    <a href="price-details.html">
+                        <div class="price-content">
+                            <div class="icon-title">
+                                <i class="cc XRP"></i>
+                                <span>Ripple</span>
+                            </div>
+                            <h5>$ 11,785.10</h5>
+                        </div>
+                        <div id="chart4"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                <div class="price-widget bg-dark">
+                    <a href="price-details.html">
+                        <div class="price-content">
+                            <div class="icon-title">
+                                <i class="cc LTC"></i>
+                                <span>Litecoin</span>
+                            </div>
+                            <h5>$ 11,785.10</h5>
+                        </div>
+                        <div id="chart5"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                <div class="price-widget bg-dark">
+                    <a href="price-details.html">
+                        <div class="price-content">
+                            <div class="icon-title">
+                                <i class="cc ADA"></i>
+                                <span>Cardano</span>
+                            </div>
+                            <h5>$ 11,785.10</h5>
+                        </div>
+                        <div id="chart6"></div>
+                    </a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+    <div class="perfection section-padding bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-8">
+                <div class="section-title text-center">
+                    <h2>Perfect for everyone</h2>
+                    <p>Liquid is a user-friendly platform built for everyone, from beginners to pros.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4">
+                <div class="perfection-content">
+                    <h4>Fiat Gateway</h4>
+                    <p>Link your bank account to Liquid to jump in and out of the crypto markets as you please.
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="perfection-content">
+                    <h4>Peace of Mind</h4>
+                    <p>We store 98% of digital funds in an offline, secure wallet.</p>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="perfection-content">
+                    <h4>Low Fees</h4>
+                    <p>Our fee structure is simple and competitive to give Liquid traders the best possible
+                        experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="swap-crypto section-padding">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-xl-5">
+                <div class="section-title my-5">
+                    <h2 class="text-start pb-3">Instantly Swap Cryptos</h2>
+                    <p>Create your own trading pairs and swap any cryptocurrency on Liquid for another easily
+                        and quickly.</p>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="swap-crypto-img">
+                    <img src="./images/landing/qex.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="advance-trading section-padding">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <div class="section-title text-center">
+                    <h2>Advanced Trading</h2>
+                    <p>Trade our spot and margin markets with advanced funding options, lightning fast execution
+                        and deep liquidity.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-between align-items-center">
+            <div class="col-xl-8">
+                <div class="advance-trading-img">
+                    <img src="./images/portfolio.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="advance-trading-content">
+                    <h4>Powerful API</h4>
+                    <p>Manage your positions easily with our intuitive API, trading platform and advanced order
+                        options.
+                    </p>
+                </div>
+                <div class="advance-trading-content">
+                    <h4>Leverage up to 100x</h4>
+                    <p>Trade Bitcoin CFDs with up to 100x leverage.</p>
+                </div>
+                <div class="advance-trading-content">
+                    <h4>Deep Liquidity</h4>
+                    <p>Our advanced proprietary multi-market order technology enhances liquidity, tightening
+                        spreads and reducing slippage.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="get-started section-padding bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-8">
+                <div class="section-title text-center">
+                    <h2>Get started</h2>
+                    <p>Trade our spot and margin markets with advanced funding options</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 col-md-6">
+                <div class="get-started-content">
+                    <h4>Licensed & Regulated</h4>
+                    <p>We are fully regulated, licensed and meet the strictest safety standards by the Japan
+                        Financial Services Agency.</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <div class="get-started-content">
+                    <h4>Safe Storage</h4>
+                    <p>We store all customer assets in cold, offline storage to ensure your funds are protected.
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <div class="get-started-content">
+                    <h4>Security First</h4>
+                    <p>We use the latest technologies to keep your funds safe, and stay ahead of vulnerabilities
+                        and exploitation attempts.</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <div class="get-started-content">
+                    <h4>Fast Withdrawals</h4>
+                    <p>Using multi-party computing we are able to offer fast round-the-clock withdrawals while
+                        maintaining our rigorous security standards.</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <div class="get-started-content">
+                    <h4>Fiat Gateway</h4>
+                    <p>We accept deposits of major fiat currencies including USD, JPY, EUR, SGD, HKD, and AUD.
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <div class="get-started-content">
+                    <h4>24/7 Support.</h4>
+                    <p>Have a problem or just need to ask us someting? Our customer support team are available
+                        to help 24/7.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="testimonial2 section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="testimonial2-content">
+                    <h3>Everyone is a Trader</h3>
+                    <h5>We're on a mission to help provide financial freedom for everyone.</h5>
+                    <p>Our eyes are set beyond the world of cryptocurrency, we want to create an ecosystem
+                        anyone can use.</p>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="testimonial2-content">
+                    <h3>Everyone is a Trader</h3>
+                    <h5>We're on a mission to help provide financial freedom for everyone.</h5>
+                    <p>Our eyes are set beyond the world of cryptocurrency, we want to create an ecosystem
+                        anyone can use.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="cta2 section-padding bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="cta2-content text-center d-flex justify-content-center align-items-center">
+                    <h3 class="me-5 mb-0">Step into Prexy</h3>
+                    <a href="#" class="btn btn-dark ">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="bottom section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-lg-6 col-sm-6">
+                <div class="bottom-logo">
+                    <img class="pb-3" src="./images/logow.png" alt="">
+
+                    <p>Prexy is a unique and beautiful collection of UI elements that are all flexible and modular. A
+                        complete and customizable solution to building the website of your dreams.</p>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-6 col-sm-6 col-6">
+                <div class="bottom-widget">
+                    <h4 class="widget-title">Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">Affiliate</a></li>
+                        <li><a href="#">Our Partner</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-6 col-sm-6 col-6">
+                <div class="bottom-widget">
+                    <h4 class="widget-title">Support</h4>
+                    <ul>
+                        <li><a href="#">Ticket</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Helpdesk</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-sm-6">
+                <div class="bottom-widget">
+                    <h4 class="widget-title">Exchange Pair</h4>
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-sm-6 col-6">
+                            <ul>
+                                <li><a href="#">ETH to BTC</a></li>
+                                <li><a href="#">BTC to ETH</a></li>
+                                <li><a href="#">LTC to ETH</a></li>
+                                <li><a href="#">USDT to BTC</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-sm-6 col-6">
+                            <ul>
+                                <li><a href="#">BTC to USDT</a></li>
+                                <li><a href="#">LTC to BTC</a></li>
+                                <li><a href="#">XMR to BTC</a></li>
+                                <li><a href="#">ETC to DASH</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class="copyright">
+                    <p>© Copyright 2019 <a href="#">Prexy</a> I All Rights Reserved</p>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class="footer-social">
+                    <ul>
+                        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                        <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+<script src="./vendor/jquery/jquery.min.js"></script>
+<script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="./vendor/apexchart/apexcharts.min.js"></script>
+
+
+<script src="./js/plugins/apex-price.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./vendor/jquery-sparkline/jquery.sparkline.min.js"></script>
+<script src="./js/plugins/sparkline-init.js"></script>
+
+
+
+
+
+
+
+<script src="./js/scripts.js"></script>
+
+
+</body>
+
+</html>
